@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WC Variation Swatches 1.0.0\n"
 "Report-Msgid-Bugs-To: https://pluginever.com/plugins/wc-variation-swatches/\n"
-"POT-Creation-Date: 2023-09-27 05:06:08+00:00\n"
+"POT-Creation-Date: 2023-09-27 10:23:29+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,7 +28,7 @@ msgstr ""
 msgid "Go Pro"
 msgstr ""
 
-#: lib/Lib/Plugin.php:655 src/Admin/Settings.php:680
+#: lib/Lib/Plugin.php:655 src/Admin/Settings.php:646
 msgid "Documentation"
 msgstr ""
 
@@ -52,29 +52,29 @@ msgstr ""
 msgid "Settings saved."
 msgstr ""
 
-#: lib/Lib/Settings.php:260 lib/Lib/Settings.php:351 lib/Lib/Settings.php:360
-#: lib/Lib/Settings.php:369
+#: lib/Lib/Settings.php:310 lib/Lib/Settings.php:401 lib/Lib/Settings.php:410
+#: lib/Lib/Settings.php:419
 msgid "Recommended"
 msgstr ""
 
-#: lib/Lib/Settings.php:261 lib/Lib/Settings.php:352 lib/Lib/Settings.php:361
-#: lib/Lib/Settings.php:370
+#: lib/Lib/Settings.php:311 lib/Lib/Settings.php:402 lib/Lib/Settings.php:411
+#: lib/Lib/Settings.php:420
 msgid "Install Now"
 msgstr ""
 
-#: lib/Lib/Settings.php:322
+#: lib/Lib/Settings.php:372
 msgid "Need Help?"
 msgstr ""
 
-#: lib/Lib/Settings.php:384
+#: lib/Lib/Settings.php:434
 msgid "Join our Community"
 msgstr ""
 
-#: lib/Lib/Settings.php:388
+#: lib/Lib/Settings.php:438
 msgid "Request a Feature"
 msgstr ""
 
-#: lib/Lib/Settings.php:392
+#: lib/Lib/Settings.php:442
 msgid "Report a Bug"
 msgstr ""
 
@@ -94,8 +94,8 @@ msgstr ""
 msgid "Version %s"
 msgstr ""
 
-#. Plugin Name of the plugin/theme
-msgid "WC Variation Swatches"
+#: src/Admin/Menus.php:33 src/Admin/Menus.php:34
+msgid "Variation Swatches"
 msgstr ""
 
 #: src/Admin/Settings.php:25 src/Admin/Settings.php:313
@@ -522,44 +522,6 @@ msgstr ""
 msgid "The following options are the shop page customize settings."
 msgstr ""
 
-#: src/Admin/Settings.php:627
-msgid "Feature 1"
-msgstr ""
-
-#: src/Admin/Settings.php:628
-msgid "Feature 2"
-msgstr ""
-
-#: src/Admin/Settings.php:629
-msgid "Feature 3"
-msgstr ""
-
-#: src/Admin/Settings.php:630
-msgid "Feature 4"
-msgstr ""
-
-#: src/Admin/Settings.php:631
-msgid "Feature 5"
-msgstr ""
-
-#: src/Admin/Settings.php:632
-msgid "Many more ..."
-msgstr ""
-
-#: src/Admin/Settings.php:636
-msgid "Want More?"
-msgstr ""
-
-#: src/Admin/Settings.php:637
-msgid ""
-"This plugin offers a premium version which comes with the following "
-"features:"
-msgstr ""
-
-#: src/Admin/Settings.php:644
-msgid "Upgrade to PRO"
-msgstr ""
-
 #: src/Installer.php:79
 #. translators: 1: plugin name 2: version number
 msgid "%1$s updated to version %2$s successfully."
@@ -798,6 +760,10 @@ msgstr ""
 
 #: vendor/wp-cli/wp-cli/php/utils-wp.php:241
 msgid "Drag widgets here to remove them from the sidebar but keep their settings."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WC Variation Swatches"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
