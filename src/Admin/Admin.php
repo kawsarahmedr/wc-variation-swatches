@@ -108,12 +108,12 @@ class Admin {
 	 */
 	public function admin_scripts( $hook ) {
 		$screen_ids = self::get_screen_ids();
-		wc_variation_swatches()->register_style( 'wc-variation-swatches-admin', 'css/admin-common.css' );
-		wc_variation_swatches()->register_script( 'wc-variation-swatches-admin', 'js/admin-common.js' );
+		wc_variation_swatches()->register_style( 'wcvs-admin', 'css/admin-common.css' );
+		wc_variation_swatches()->register_script( 'wcvs-admin', 'js/admin-common.js' );
 
 		if ( in_array( $hook, $screen_ids, true ) ) {
-			wp_enqueue_style( 'wc-variation-swatches-admin' );
-			wp_enqueue_script( 'wc-variation-swatches-admin' );
+			wp_enqueue_style( 'wcvs-admin' );
+			wp_enqueue_script( 'wcvs-admin' );
 		}
 	}
 }

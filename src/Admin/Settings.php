@@ -613,40 +613,6 @@ class Settings extends Lib\Settings {
 		return apply_filters( 'wc_variation_swatches_get_settings_' . $tab, $settings );
 	}
 
-	/**
-	 * Output premium widget.
-	 *
-	 * @since 1.0.0
-	 * @return void
-	 */
-	protected function output_premium_widget() {
-		if ( wc_variation_swatches()->is_premium_active() ) {
-			return;
-		}
-		$features = array(
-			__( 'Feature 1', 'wc-variation-swatches' ),
-			__( 'Feature 2', 'wc-variation-swatches' ),
-			__( 'Feature 3', 'wc-variation-swatches' ),
-			__( 'Feature 4', 'wc-variation-swatches' ),
-			__( 'Feature 5', 'wc-variation-swatches' ),
-			__( 'Many more ...', 'wc-variation-swatches' ),
-		);
-		?>
-		<div class="pev-panel promo-panel">
-			<h3><?php esc_html_e( 'Want More?', 'wc-variation-swatches' ); ?></h3>
-			<p><?php esc_attr_e( 'This plugin offers a premium version which comes with the following features:', 'wc-variation-swatches' ); ?></p>
-			<ul>
-				<?php foreach ( $features as $feature ) : ?>
-					<li>- <?php echo esc_html( $feature ); ?></li>
-				<?php endforeach; ?>
-			</ul>
-			<a href="https://pluginever.com/plugins/wc-variation-swatches/?utm_source=plugin-settings&utm_medium=banner&utm_campaign=upgrade&utm_id=wc-variation-swatches" class="button" target="_blank">
-				<?php esc_html_e( 'Upgrade to PRO', 'wc-variation-swatches' ); ?>
-			</a>
-		</div>
-		<?php
-	}
-
 	 /**
 	 * Output settings form.
 	 *

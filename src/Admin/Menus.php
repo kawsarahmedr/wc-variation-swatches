@@ -30,8 +30,8 @@ class Menus {
 	public function settings_menu() {
 		add_submenu_page(
 			'woocommerce',
-			__( 'WC Variation Swatches', 'wc-variation-swatches' ),
-			__( 'WC Variation Swatches', 'wc-variation-swatches' ),
+			__( 'Variation Swatches', 'wc-variation-swatches' ),
+			__( 'Variation Swatches', 'wc-variation-swatches' ),
 			'manage_options',
 			'wc-variation-swatches',
 			array( Settings::class, 'output' )
