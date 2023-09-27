@@ -23,7 +23,10 @@ class Settings extends Lib\Settings {
 	public function get_tabs() {
 		$tabs = array(
 			'general' => __( 'General', 'wc-variation-swatches' ),
-			'test' => __( 'test', 'wc-variation-swatches' ),
+			'advanced' => __( 'Advanced', 'wc-variation-swatches' ),
+			'global_style' => __( 'Global Styles', 'wc-variation-swatches' ),
+			'product_page' => __( 'Product Page', 'wc-variation-swatches' ),
+			'shop_page' => __( 'Shop Page', 'wc-variation-swatches' ),
 		);
 
 		return apply_filters( 'wc_variation_swatches_settings_tabs', $tabs );
@@ -41,7 +44,7 @@ class Settings extends Lib\Settings {
 		$settings = array();
 
 		switch ( $tab ) {
-			case 'general':
+			case 'general' :
 				$settings = array(
 					[
 						'title' => __( 'General settings', 'wc-variation-swatches' ),
@@ -50,13 +53,32 @@ class Settings extends Lib\Settings {
 						'id'    => 'general_options',
 					],
 					[
-						'title'       => __( 'Example field', 'wc-variation-swatches' ),
-						'id'          => 'wcsp_example_field',
-						'desc'        => __( 'This is an example field.', 'wc-variation-swatches' ),
-						'desc_tip'    => __( 'This is an example field.', 'wc-variation-swatches' ),
-						'type'        => 'text',
-						'default'     => 'I am a default value',
-						'placeholder' => 'I am a placeholder',
+						'title'   => __( 'Enable for Product page', 'wc-variation-swatches' ),
+						'desc'    => __( 'Enable swatches for product page.', 'wc-variation-swatches' ),
+						'id'      => 'wcvs_enable_product_page',
+						'default' => 'Yes',
+						'type'    => 'checkbox',
+					],
+					[
+						'title'   => __( 'Enable for Shop page', 'wc-variation-swatches' ),
+						'desc'    => __( 'Enable swatches for shop page.', 'wc-variation-swatches' ),
+						'id'      => 'wcvs_enable_shop_page',
+						'default' => 'Yes',
+						'type'    => 'checkbox',
+					],
+					[
+						'title'   => __( 'Auto Convert Dropdown to Label', 'wc-variation-swatches' ),
+						'desc'    => __( 'Automatically convert dropdown to labels.', 'wc-variation-swatches' ),
+						'id'      => 'wcvs_auto_convert_label',
+						'default' => 'Yes',
+						'type'    => 'checkbox',
+					],
+					[
+						'title'   => __( 'Auto Convert Dropdown to Image', 'wc-variation-swatches' ),
+						'desc'    => __( 'Automatically convert dropdown to images.', 'wc-variation-swatches' ),
+						'id'      => 'wcvs_auto_convert_image',
+						'default' => 'Yes',
+						'type'    => 'checkbox',
 					],
 					[
 						'type' => 'sectionend',
@@ -64,29 +86,82 @@ class Settings extends Lib\Settings {
 					],
 				);
 				break;
-			case 'test':
+			case 'advanced' :
 				$settings = array(
 					[
 						'title' => __( 'Advanced settings', 'wc-variation-swatches' ),
 						'type'  => 'title',
-						'desc'  => __( 'The following options affect how the plugin will work.', 'wc-variation-swatches' ),
+						'desc'  => __( 'The following options are the advanced settings.', 'wc-variation-swatches' ),
 						'id'    => 'advanced_options',
 					],
 					[
-						'title'       => __( 'Example field', 'wc-variation-swatches' ),
-						'id'          => 'wcsp_example_field',
-						'desc'        => __( 'This is an example field.', 'wc-variation-swatches' ),
-						'desc_tip'    => __( 'This is an example field.', 'wc-variation-swatches' ),
-						'type'        => 'text',
-						'default'     => 'I am a default value',
-						'placeholder' => 'I am a placeholder',
+						'title'   => __( 'Disable Out of Stock', 'wc-variation-swatches' ),
+						'desc'    => __( 'Disable the out of stock items.', 'wc-variation-swatches' ),
+						'id'      => 'wcvs_disable_out_of_stock',
+						'default' => 'Yes',
+						'type'    => 'checkbox',
+					],
+					[
+						'title'   => __( 'Clickable Out Of Stock', 'wc-variation-swatches' ),
+						'desc'    => __( 'Clickable the out of stock items.', 'wc-variation-swatches' ),
+						'id'      => 'wcvs_clickable_out_of_stock',
+						'default' => 'Yes',
+						'type'    => 'checkbox',
+					],
+					[
+						'title'   => __( 'Disabled Attribute style', 'wc-image-flip' ),
+						'desc'    => __( 'Disabled the attribute style.', 'wc-image-flip' ),
+						'id'      => 'wcif_attribute_style',
+						'type'    => 'select',
+						'options' => array(
+							'hide'               => __( 'Hide', 'wc-image-flip' ),
+							'blur_with_cross'    => __( 'Blur with cross', 'wc-image-flip' ),
+							'blur_without_cross' => __( 'Blur without cross', 'wc-image-flip' ),
+						),
+						'default' => 'hide',
+					],
+					[
+						'title'   => __( 'Attribute Image Size', 'wc-image-flip' ),
+						'desc'    => __( 'Attribute image sizes.', 'wc-image-flip' ),
+						'id'      => 'wcif_attribute_img_size',
+						'type'    => 'select',
+						'options' => array(
+							'size_1'               => __( 'Image Size 1', 'wc-image-flip' ),
+							'size_2'               => __( 'Image Size 2', 'wc-image-flip' ),
+							'size_3'               => __( 'Image Size 3', 'wc-image-flip' ),
+							'size_4'               => __( 'Image Size 4', 'wc-image-flip' ),
+						),
+						'default' => 'size_1',
 					],
 					[
 						'type' => 'sectionend',
 						'id'   => 'advanced_options',
 					],
 				);
-				do_action( 'wc_variation_swatches_settings_test' );
+				break;
+			case 'global_style' :
+				$settings = array(
+					[
+						'title' => __( 'Global Styles', 'wc-variation-swatches' ),
+						'type'  => 'title',
+						'desc'  => __( 'The following options are the global style settings.', 'wc-variation-swatches' ),
+						'id'    => 'global_style_options',
+					],
+					[
+						'type' => 'sectionend',
+						'id'   => 'global_style_options',
+					],
+					[
+						'title' => __( 'Swatches', 'wc-variation-swatches' ),
+						'type'  => 'title',
+						'desc'  => __( 'The following options are the variation swatches style settings.', 'wc-variation-swatches' ),
+						'id'    => 'swatches_style_options',
+					],
+					[
+						'type' => 'sectionend',
+						'id'   => 'swatches_style_options',
+					],
+				);
 				break;
 		}
 

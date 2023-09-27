@@ -19,7 +19,7 @@ class Menus {
 	 */
 	public function __construct() {
 		add_action( 'admin_menu', array( $this, 'settings_menu' ), 55 );
-		add_action( 'wc_variation_swatches_things_content', array( $this, 'output_things_content' ) );
+//		add_action( 'wc_variation_swatches_things_content', array( $this, 'output_things_content' ) );
 		add_action( 'wc_variation_swatches_settings_test', array( __CLASS__, 'render_test_tab_data' ) );
 	}
 

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WC Variation Swatches 1.0.0\n"
 "Report-Msgid-Bugs-To: https://pluginever.com/plugins/wc-variation-swatches/\n"
-"POT-Creation-Date: 2023-09-26 11:57:53+00:00\n"
+"POT-Creation-Date: 2023-09-26 14:21:32+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,7 +28,7 @@ msgstr ""
 msgid "Go Pro"
 msgstr ""
 
-#: lib/Lib/Plugin.php:655 src/Admin/Settings.php:140
+#: lib/Lib/Plugin.php:655 src/Admin/Settings.php:161
 msgid "Documentation"
 msgstr ""
 
@@ -174,62 +174,66 @@ msgstr ""
 msgid "General"
 msgstr ""
 
-#: src/Admin/Settings.php:46
+#: src/Admin/Settings.php:26
+msgid "test"
+msgstr ""
+
+#: src/Admin/Settings.php:47
 msgid "General settings"
 msgstr ""
 
-#: src/Admin/Settings.php:48 src/Admin/Settings.php:71
+#: src/Admin/Settings.php:49 src/Admin/Settings.php:72
 msgid "The following options affect how the plugin will work."
 msgstr ""
 
-#: src/Admin/Settings.php:52 src/Admin/Settings.php:75
+#: src/Admin/Settings.php:53 src/Admin/Settings.php:76
 msgid "Example field"
 msgstr ""
 
-#: src/Admin/Settings.php:54 src/Admin/Settings.php:55
-#: src/Admin/Settings.php:77 src/Admin/Settings.php:78
+#: src/Admin/Settings.php:55 src/Admin/Settings.php:56
+#: src/Admin/Settings.php:78 src/Admin/Settings.php:79
 msgid "This is an example field."
 msgstr ""
 
-#: src/Admin/Settings.php:69
+#: src/Admin/Settings.php:70
 msgid "Advanced settings"
 msgstr ""
 
-#: src/Admin/Settings.php:106
+#: src/Admin/Settings.php:108
 msgid "Feature 1"
 msgstr ""
 
-#: src/Admin/Settings.php:107
+#: src/Admin/Settings.php:109
 msgid "Feature 2"
 msgstr ""
 
-#: src/Admin/Settings.php:108
+#: src/Admin/Settings.php:110
 msgid "Feature 3"
 msgstr ""
 
-#: src/Admin/Settings.php:109
+#: src/Admin/Settings.php:111
 msgid "Feature 4"
 msgstr ""
 
-#: src/Admin/Settings.php:110
+#: src/Admin/Settings.php:112
 msgid "Feature 5"
 msgstr ""
 
-#: src/Admin/Settings.php:111
+#: src/Admin/Settings.php:113
 msgid "Many more ..."
 msgstr ""
 
-#: src/Admin/Settings.php:115
+#: src/Admin/Settings.php:117
 msgid "Want More?"
 msgstr ""
 
-#: src/Admin/Settings.php:116
+#: src/Admin/Settings.php:118
 msgid ""
 "This plugin offers a premium version which comes with the following "
 "features:"
 msgstr ""
 
-#: src/Admin/Settings.php:123
+#: src/Admin/Settings.php:125
 msgid "Upgrade to PRO"
 msgstr ""
 
