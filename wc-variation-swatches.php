@@ -85,9 +85,9 @@ add_action(
  */
 function wc_variation_swatches() { // phpcs:ignore
 	$data = array(
-		'file'             => __FILE__,
-		'settings_url'     => admin_url( 'admin.php?page=wc-variation-swatches' ),
-		'support_url'      => 'https://pluginever.com/support/',
+		'file'         => __FILE__,
+		'settings_url' => admin_url( 'admin.php?page=wc-variation-swatches' ),
+		'support_url'  => 'https://pluginever.com/support/',
 	);
 
 	return Plugin::create( $data );
