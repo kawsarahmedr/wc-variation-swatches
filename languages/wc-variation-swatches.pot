@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WC Variation Swatches 1.0.0\n"
 "Report-Msgid-Bugs-To: https://pluginever.com/plugins/wc-variation-swatches/\n"
-"POT-Creation-Date: 2023-09-26 14:21:32+00:00\n"
+"POT-Creation-Date: 2023-09-27 05:06:08+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,7 +28,7 @@ msgstr ""
 msgid "Go Pro"
 msgstr ""
 
-#: lib/Lib/Plugin.php:655 src/Admin/Settings.php:161
+#: lib/Lib/Plugin.php:655 src/Admin/Settings.php:680
 msgid "Documentation"
 msgstr ""
 
@@ -78,270 +78,486 @@ msgstr ""
 msgid "Report a Bug"
 msgstr ""
 
-#: src/Admin/Actions.php:45
-msgid "Please enter a name for the thing."
-msgstr ""
-
-#: src/Admin/Actions.php:50
-msgid "Please select a product for the thing."
-msgstr ""
-
-#: src/Admin/Actions.php:73
-#. translators: %1$s: order edit link, %2$s: order id
-msgid ""
-"Thing has been created and created an associated order. <a "
-"href=\"%1$s\">Edit order #%2$s</a>"
-msgstr ""
-
-#: src/Admin/Actions.php:86
-#. translators: %1$s: order edit link, %2$s: order id
-msgid ""
-"Thing has been created and updated the associated order. <a "
-"href=\"%1$s\">Edit order #%2$s</a>"
-msgstr ""
-
-#: src/Admin/Actions.php:93
-#. translators: %1$s: thing edit link, %2$s: thing id
-msgid "Thing has been created. <a href=\"%1$s\">Edit thing #%2$s</a>"
-msgstr ""
-
-#: src/Admin/Admin.php:63
+#: src/Admin/Admin.php:62
 #. translators: 1: Plugin name 2: WordPress
 msgid ""
 "Thank you for using %1$s. If you like it, please leave us a %2$s rating. A "
 "huge thank you from PluginEver in advance!"
 msgstr ""
 
-#: src/Admin/Admin.php:65
+#: src/Admin/Admin.php:64
 msgid "Thanks :)"
 msgstr ""
 
-#: src/Admin/Admin.php:83
+#: src/Admin/Admin.php:82
 #. translators: 1: Plugin version
 msgid "Version %s"
-msgstr ""
-
-#: src/Admin/ListTables/ThingsListTable.php:88
-msgid "No items found."
-msgstr ""
-
-#: src/Admin/ListTables/ThingsListTable.php:100
-#: src/Admin/views/edit-thing.php:73
-msgid "Name"
-msgstr ""
-
-#: src/Admin/ListTables/ThingsListTable.php:101
-#: src/Admin/views/edit-thing.php:31
-msgid "Product"
-msgstr ""
-
-#: src/Admin/ListTables/ThingsListTable.php:102
-#: src/Admin/views/edit-thing.php:45
-msgid "Order"
-msgstr ""
-
-#: src/Admin/ListTables/ThingsListTable.php:103
-#: src/Admin/views/add-thing.php:71 src/Admin/views/edit-thing.php:60
-msgid "Customer"
-msgstr ""
-
-#: src/Admin/ListTables/ThingsListTable.php:104
-msgid "Date Created"
-msgstr ""
-
-#: src/Admin/ListTables/ThingsListTable.php:143
-#: src/Admin/ListTables/ThingsListTable.php:224
-#: src/Admin/views/edit-thing.php:86
-msgid "Delete"
-msgstr ""
-
-#: src/Admin/ListTables/ThingsListTable.php:178
-#. translators: %d: number of things deleted.
-msgid "%d thing deleted."
-msgid_plural "%d things deleted."
-msgstr[0] ""
-msgstr[1] ""
-
-#: src/Admin/ListTables/ThingsListTable.php:223
-msgid "Edit"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
 msgid "WC Variation Swatches"
 msgstr ""
 
-#: src/Admin/Settings.php:25
+#: src/Admin/Settings.php:25 src/Admin/Settings.php:313
+#: src/Admin/Settings.php:480
 msgid "General"
 msgstr ""
 
 #: src/Admin/Settings.php:26
-msgid "test"
+msgid "Advanced"
 msgstr ""
 
-#: src/Admin/Settings.php:47
-msgid "General settings"
+#: src/Admin/Settings.php:27 src/Admin/Settings.php:147
+msgid "Global Styles"
 msgstr ""
 
-#: src/Admin/Settings.php:49 src/Admin/Settings.php:72
+#: src/Admin/Settings.php:28 src/Admin/Settings.php:303
+msgid "Product Page"
+msgstr ""
+
+#: src/Admin/Settings.php:29 src/Admin/Settings.php:474
+msgid "Shop Page"
+msgstr ""
+
+#: src/Admin/Settings.php:50
+msgid "General Settings"
+msgstr ""
+
+#: src/Admin/Settings.php:52
 msgid "The following options affect how the plugin will work."
 msgstr ""
 
-#: src/Admin/Settings.php:53 src/Admin/Settings.php:76
-msgid "Example field"
+#: src/Admin/Settings.php:56
+msgid "Enable for product page"
 msgstr ""
 
-#: src/Admin/Settings.php:55 src/Admin/Settings.php:56
-#: src/Admin/Settings.php:78 src/Admin/Settings.php:79
-msgid "This is an example field."
+#: src/Admin/Settings.php:57
+msgid "Enable swatches for product page."
+msgstr ""
+
+#: src/Admin/Settings.php:63
+msgid "Enable for shop page"
+msgstr ""
+
+#: src/Admin/Settings.php:64
+msgid "Enable swatches for shop page."
 msgstr ""
 
 #: src/Admin/Settings.php:70
+msgid "Auto convert dropdown to label"
+msgstr ""
+
+#: src/Admin/Settings.php:71
+msgid "Automatically convert dropdown to labels."
+msgstr ""
+
+#: src/Admin/Settings.php:77
+msgid "Auto convert dropdown to image"
+msgstr ""
+
+#: src/Admin/Settings.php:78
+msgid "Automatically convert dropdown to images."
+msgstr ""
+
+#: src/Admin/Settings.php:92
 msgid "Advanced settings"
 msgstr ""
 
-#: src/Admin/Settings.php:108
-msgid "Feature 1"
+#: src/Admin/Settings.php:94
+msgid "The following options are the advanced settings."
 msgstr ""
 
-#: src/Admin/Settings.php:109
-msgid "Feature 2"
+#: src/Admin/Settings.php:98
+msgid "Disable out of stock"
 msgstr ""
 
-#: src/Admin/Settings.php:110
-msgid "Feature 3"
+#: src/Admin/Settings.php:99
+msgid "Disable the out of stock items."
 msgstr ""
 
-#: src/Admin/Settings.php:111
-msgid "Feature 4"
+#: src/Admin/Settings.php:105
+msgid "Clickable out of stock"
+msgstr ""
+
+#: src/Admin/Settings.php:106
+msgid "Clickable the out of stock items."
 msgstr ""
 
 #: src/Admin/Settings.php:112
-msgid "Feature 5"
+msgid "Disabled attribute style"
 msgstr ""
 
 #: src/Admin/Settings.php:113
-msgid "Many more ..."
-msgstr ""
-
-#: src/Admin/Settings.php:117
-msgid "Want More?"
+msgid "Disabled the attribute style."
 msgstr ""
 
 #: src/Admin/Settings.php:118
+msgid "Hide"
+msgstr ""
+
+#: src/Admin/Settings.php:119
+msgid "Blur with cross"
+msgstr ""
+
+#: src/Admin/Settings.php:120
+msgid "Blur without cross"
+msgstr ""
+
+#: src/Admin/Settings.php:125
+msgid "Attribute image size"
+msgstr ""
+
+#: src/Admin/Settings.php:126
+msgid "Attribute image sizes."
+msgstr ""
+
+#: src/Admin/Settings.php:131
+msgid "Image Size 1"
+msgstr ""
+
+#: src/Admin/Settings.php:132
+msgid "Image Size 2"
+msgstr ""
+
+#: src/Admin/Settings.php:133
+msgid "Image Size 3"
+msgstr ""
+
+#: src/Admin/Settings.php:134
+msgid "Image Size 4"
+msgstr ""
+
+#: src/Admin/Settings.php:149
+msgid "The following options are the global style settings."
+msgstr ""
+
+#: src/Admin/Settings.php:157
+msgid "Swatches"
+msgstr ""
+
+#: src/Admin/Settings.php:159
+msgid "The following options are the variation swatches style settings."
+msgstr ""
+
+#: src/Admin/Settings.php:163 src/Admin/Settings.php:405
+#: src/Admin/Settings.php:546
+msgid "Swatch width"
+msgstr ""
+
+#: src/Admin/Settings.php:165 src/Admin/Settings.php:407
+#: src/Admin/Settings.php:548
+msgid "Swatch width."
+msgstr ""
+
+#: src/Admin/Settings.php:171 src/Admin/Settings.php:417
+#: src/Admin/Settings.php:558
+msgid "Swatch height"
+msgstr ""
+
+#: src/Admin/Settings.php:173 src/Admin/Settings.php:419
+#: src/Admin/Settings.php:560
+msgid "Swatch height."
+msgstr ""
+
+#: src/Admin/Settings.php:179 src/Admin/Settings.php:429
+#: src/Admin/Settings.php:570
+msgid "Swatch radius"
+msgstr ""
+
+#: src/Admin/Settings.php:181
+msgid "Swatch radius."
+msgstr ""
+
+#: src/Admin/Settings.php:187 src/Admin/Settings.php:441
+#: src/Admin/Settings.php:582
+msgid "Border color"
+msgstr ""
+
+#: src/Admin/Settings.php:188 src/Admin/Settings.php:442
+#: src/Admin/Settings.php:583
+msgid "Choose the border color."
+msgstr ""
+
+#: src/Admin/Settings.php:195 src/Admin/Settings.php:229
+#: src/Admin/Settings.php:260 src/Admin/Settings.php:453
+#: src/Admin/Settings.php:594
+msgid "Font size"
+msgstr ""
+
+#: src/Admin/Settings.php:197 src/Admin/Settings.php:231
+#: src/Admin/Settings.php:262 src/Admin/Settings.php:455
+#: src/Admin/Settings.php:596
+msgid "Font size."
+msgstr ""
+
+#: src/Admin/Settings.php:207
+msgid "Tooltip"
+msgstr ""
+
+#: src/Admin/Settings.php:209
+msgid "The following options are the tooltip settings."
+msgstr ""
+
+#: src/Admin/Settings.php:213
+msgid "Background color"
+msgstr ""
+
+#: src/Admin/Settings.php:214
+msgid "Choose the background color."
+msgstr ""
+
+#: src/Admin/Settings.php:221
+msgid "Font color"
+msgstr ""
+
+#: src/Admin/Settings.php:222
+msgid "Choose the font color."
+msgstr ""
+
+#: src/Admin/Settings.php:241
+msgid "Label"
+msgstr ""
+
+#: src/Admin/Settings.php:243
+msgid "The following options are the label settings."
+msgstr ""
+
+#: src/Admin/Settings.php:247
+msgid "Label position"
+msgstr ""
+
+#: src/Admin/Settings.php:248
+msgid "Chose the label position."
+msgstr ""
+
+#: src/Admin/Settings.php:253
+msgid "None"
+msgstr ""
+
+#: src/Admin/Settings.php:254
+msgid "Stacked"
+msgstr ""
+
+#: src/Admin/Settings.php:255
+msgid "Inline"
+msgstr ""
+
+#: src/Admin/Settings.php:272
+msgid "Attribute"
+msgstr ""
+
+#: src/Admin/Settings.php:274
+msgid "The following options are the attribute settings."
+msgstr ""
+
+#: src/Admin/Settings.php:278
+msgid "Check/tick color"
+msgstr ""
+
+#: src/Admin/Settings.php:279
+msgid "Check/tick color."
+msgstr ""
+
+#: src/Admin/Settings.php:286
+msgid "Cross color"
+msgstr ""
+
+#: src/Admin/Settings.php:287
+msgid "Cross color."
+msgstr ""
+
+#: src/Admin/Settings.php:305
+msgid "The following options are the product page settings."
+msgstr ""
+
+#: src/Admin/Settings.php:315
+msgid "The following options are the general settings."
+msgstr ""
+
+#: src/Admin/Settings.php:319
+msgid "Enable tooltip"
+msgstr ""
+
+#: src/Admin/Settings.php:320
+msgid "Enable tooltip."
+msgstr ""
+
+#: src/Admin/Settings.php:326
+msgid "Show selected attribute"
+msgstr ""
+
+#: src/Admin/Settings.php:327
+msgid "Show selected attribute."
+msgstr ""
+
+#: src/Admin/Settings.php:333
+msgid "Variation label separator"
+msgstr ""
+
+#: src/Admin/Settings.php:335
+msgid "Variation label separator."
+msgstr ""
+
+#: src/Admin/Settings.php:344
+msgid "Enable preloader"
+msgstr ""
+
+#: src/Admin/Settings.php:345
+msgid "Enable the preloader."
+msgstr ""
+
+#: src/Admin/Settings.php:355
+msgid "Variation stock info"
+msgstr ""
+
+#: src/Admin/Settings.php:357
+msgid "Variation stock info."
+msgstr ""
+
+#: src/Admin/Settings.php:366
+msgid "Attribute display limit"
+msgstr ""
+
+#: src/Admin/Settings.php:368
+msgid "Attribute display limit."
+msgstr ""
+
+#: src/Admin/Settings.php:377
+msgid "Generate variation URL"
+msgstr ""
+
+#: src/Admin/Settings.php:378
+msgid "Generate the variation URL."
+msgstr ""
+
+#: src/Admin/Settings.php:392 src/Admin/Settings.php:532
+msgid "Customize"
+msgstr ""
+
+#: src/Admin/Settings.php:394
+msgid "The following options are the customize settings."
+msgstr ""
+
+#: src/Admin/Settings.php:398 src/Admin/Settings.php:538
+msgid "Override global settings"
+msgstr ""
+
+#: src/Admin/Settings.php:399 src/Admin/Settings.php:539
+msgid "Override global settings."
+msgstr ""
+
+#: src/Admin/Settings.php:431 src/Admin/Settings.php:572
+msgid "Swatch Radius."
+msgstr ""
+
+#: src/Admin/Settings.php:476
+msgid "The following options are the shop page settings."
+msgstr ""
+
+#: src/Admin/Settings.php:482
+msgid "The following options are the shop page general settings."
+msgstr ""
+
+#: src/Admin/Settings.php:486
+msgid "Swatch alignment"
+msgstr ""
+
+#: src/Admin/Settings.php:487
+msgid "Select the swatch alignment option."
+msgstr ""
+
+#: src/Admin/Settings.php:492
+msgid "Left"
+msgstr ""
+
+#: src/Admin/Settings.php:493
+msgid "Right"
+msgstr ""
+
+#: src/Admin/Settings.php:494
+msgid "Center"
+msgstr ""
+
+#: src/Admin/Settings.php:499
+msgid "Swatch position"
+msgstr ""
+
+#: src/Admin/Settings.php:500
+msgid "Select the swatch position."
+msgstr ""
+
+#: src/Admin/Settings.php:505
+msgid "Before Title"
+msgstr ""
+
+#: src/Admin/Settings.php:506
+msgid "After Title"
+msgstr ""
+
+#: src/Admin/Settings.php:507
+msgid "Before Price"
+msgstr ""
+
+#: src/Admin/Settings.php:508
+msgid "After Price"
+msgstr ""
+
+#: src/Admin/Settings.php:513
+msgid "Show swatches label"
+msgstr ""
+
+#: src/Admin/Settings.php:514
+msgid "Show swatches label."
+msgstr ""
+
+#: src/Admin/Settings.php:520
+msgid "attribute limits"
+msgstr ""
+
+#: src/Admin/Settings.php:522
+msgid "Attribute limite"
+msgstr ""
+
+#: src/Admin/Settings.php:534
+msgid "The following options are the shop page customize settings."
+msgstr ""
+
+#: src/Admin/Settings.php:627
+msgid "Feature 1"
+msgstr ""
+
+#: src/Admin/Settings.php:628
+msgid "Feature 2"
+msgstr ""
+
+#: src/Admin/Settings.php:629
+msgid "Feature 3"
+msgstr ""
+
+#: src/Admin/Settings.php:630
+msgid "Feature 4"
+msgstr ""
+
+#: src/Admin/Settings.php:631
+msgid "Feature 5"
+msgstr ""
+
+#: src/Admin/Settings.php:632
+msgid "Many more ..."
+msgstr ""
+
+#: src/Admin/Settings.php:636
+msgid "Want More?"
+msgstr ""
+
+#: src/Admin/Settings.php:637
 msgid ""
 "This plugin offers a premium version which comes with the following "
 "features:"
 msgstr ""
 
-#: src/Admin/Settings.php:125
+#: src/Admin/Settings.php:644
 msgid "Upgrade to PRO"
-msgstr ""
-
-#: src/Admin/views/add-thing.php:6
-msgid "Add New Thing"
-msgstr ""
-
-#: src/Admin/views/add-thing.php:7
-msgid ""
-"You can create a new thing here. This form will create a thing for the "
-"user, and optionally an associated order. Created orders will be marked as "
-"pending payment."
-msgstr ""
-
-#: src/Admin/views/add-thing.php:14
-msgid "Thing Name"
-msgstr ""
-
-#: src/Admin/views/add-thing.php:19
-msgid "Enter the name of the thing."
-msgstr ""
-
-#: src/Admin/views/add-thing.php:27
-msgid "Thing Product"
-msgstr ""
-
-#: src/Admin/views/add-thing.php:31
-msgid "Select a thing product..."
-msgstr ""
-
-#: src/Admin/views/add-thing.php:37
-msgid "Select the product associated with the thing."
-msgstr ""
-
-#: src/Admin/views/add-thing.php:45
-msgid "Thing Status"
-msgstr ""
-
-#: src/Admin/views/add-thing.php:51
-msgid "Create as a new thing."
-msgstr ""
-
-#: src/Admin/views/add-thing.php:57
-msgid "Create a new corresponding order for this new thing."
-msgstr ""
-
-#: src/Admin/views/add-thing.php:63
-msgid "Assign this thing to an existing order."
-msgstr ""
-
-#: src/Admin/views/add-thing.php:75
-msgid "Guest"
-msgstr ""
-
-#: src/Admin/views/add-thing.php:78
-msgid "Select the customer associated with the thing."
-msgstr ""
-
-#: src/Admin/views/add-thing.php:85
-msgid "Order ID"
-msgstr ""
-
-#: src/Admin/views/add-thing.php:90
-msgid "Enter the order id of the thing."
-msgstr ""
-
-#: src/Admin/views/add-thing.php:100
-msgid "Add Thing"
-msgstr ""
-
-#: src/Admin/views/edit-thing.php:14
-msgid "Edit Thing"
-msgstr ""
-
-#: src/Admin/views/edit-thing.php:22
-msgid "Thing Details"
-msgstr ""
-
-#: src/Admin/views/edit-thing.php:38
-msgid "No product assigned."
-msgstr ""
-
-#: src/Admin/views/edit-thing.php:52
-msgid "No order assigned."
-msgstr ""
-
-#: src/Admin/views/edit-thing.php:67
-msgid "No customer assigned."
-msgstr ""
-
-#: src/Admin/views/edit-thing.php:83
-msgid "Actions"
-msgstr ""
-
-#: src/Admin/views/edit-thing.php:87
-msgid "Save Thing"
-msgstr ""
-
-#: src/Admin/views/list-thing.php:19
-msgid "Things"
-msgstr ""
-
-#: src/Admin/views/list-thing.php:21
-msgid "Add New"
-msgstr ""
-
-#: src/Admin/views/list-thing.php:30
-msgid "Search"
 msgstr ""
 
 #: src/Installer.php:79

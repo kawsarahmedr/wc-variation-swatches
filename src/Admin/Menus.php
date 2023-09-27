@@ -19,17 +19,6 @@ class Menus {
 	 */
 	public function __construct() {
 		add_action( 'admin_menu', array( $this, 'settings_menu' ), 55 );
-//		add_action( 'wc_variation_swatches_settings_test', array( __CLASS__, 'render_test_tab_data' ) );
-	}
-
-	/**
-	 * Render the settings tab content.
-	 *
-	 * @return void
-	 * @since 1.0.0
-	 */
-	public static function render_test_tab_data() {
-		include __DIR__ . '/views/add-thing.php';
 	}
 
 	/**

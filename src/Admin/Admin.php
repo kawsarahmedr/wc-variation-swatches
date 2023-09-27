@@ -33,7 +33,6 @@ class Admin {
 	public function init() {
 		wc_variation_swatches()->services->add( Settings::instance() );
 		wc_variation_swatches()->services->add( Menus::class );
-		wc_variation_swatches()->services->add( Actions::class );
 	}
 
 	/**
@@ -94,9 +93,6 @@ class Admin {
 	 */
 	public static function get_screen_ids() {
 		$screen_ids = [
-			'toplevel_page_wc-variation-swatches',
-			'woocommerce_page_plugin-wc-variation-swatches',
-			'admin_page_plugin-wc-variation-swatches',
 			'woocommerce_page_wc-variation-swatches',
 		];
 
