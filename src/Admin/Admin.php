@@ -95,6 +95,7 @@ class Admin {
 	public static function get_screen_ids() {
 		$screen_ids = [
 			'woocommerce_page_wc-variation-swatches',
+			'post.php',
 		];
 
 		return apply_filters( 'wc_variation_swatches_screen_ids', $screen_ids );
@@ -108,6 +109,7 @@ class Admin {
 	 * @since 1.0.0
 	 */
 	public function admin_scripts( $hook ) {
+
 		$screen_ids = self::get_screen_ids();
 		wc_variation_swatches()->register_style( 'wcvs-admin', 'css/admin-common.css' );
 		wc_variation_swatches()->register_script( 'wcvs-admin', 'js/admin-common.js' );
