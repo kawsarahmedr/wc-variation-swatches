@@ -33,7 +33,6 @@ class Admin {
 	public function init() {
 		wc_variation_swatches()->services->add( Settings::instance() );
 		wc_variation_swatches()->services->add( Menus::class );
-		wc_variation_swatches()->services->add( Metaboxes::class );
 	}
 
 	/**

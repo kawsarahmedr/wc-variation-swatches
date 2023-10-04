@@ -25,6 +25,7 @@ class Settings extends Lib\Settings {
 			'general'      => __( 'General', 'wc-variation-swatches' ),
 			'advanced'     => __( 'Advanced', 'wc-variation-swatches' ),
 			'global_style' => __( 'Global Styles', 'wc-variation-swatches' ),
+			'product_page' => __( 'Product Page', 'wc-variation-swatches' ),
 			'shop_page'    => __( 'Shop Page', 'wc-variation-swatches' ),
 		);
 
@@ -109,8 +110,8 @@ class Settings extends Lib\Settings {
 					],
 					[
 						'title'   => __( 'Disabled attribute style', 'wc-variation-swatches' ),
-						'desc'    => __( 'Disabled the attribute style.', 'wc-variation-swatches' ),
-						'desc_tip'          => true,
+						'desc'    => __( 'Select the attribute style disabled option.', 'wc-variation-swatches' ),
+						'desc_tip'    => __( 'Select the attribute style disabled option.', 'wc-variation-swatches' ),
 						'id'      => 'wcif_attribute_style',
 						'type'    => 'select',
 						'options' => array(
@@ -122,17 +123,16 @@ class Settings extends Lib\Settings {
 					],
 					[
 						'title'   => __( 'Attribute image size', 'wc-variation-swatches' ),
-						'desc'    => __( 'Attribute image sizes.', 'wc-variation-swatches' ),
-						'desc_tip'          => true,
+						'desc'    => __( 'Select the attribute image size (px). <a href="/wp-admin/options-media.php">Media Settings</a> or use <strong>Regenerate Thumbnails</strong> plugin.', 'wc-variation-swatches' ),
+						'desc_tip'    => __( 'Select the attribute image size (px).', 'wc-variation-swatches' ),
 						'id'      => 'wcif_attribute_img_size',
 						'type'    => 'select',
 						'options' => array(
-							'size_1' => __( 'Image Size 1', 'wc-variation-swatches' ),
-							'size_2' => __( 'Image Size 2', 'wc-variation-swatches' ),
-							'size_3' => __( 'Image Size 3', 'wc-variation-swatches' ),
-							'size_4' => __( 'Image Size 4', 'wc-variation-swatches' ),
+							'size_50' => __( 'Image Size (50x50)', 'wc-variation-swatches' ),
+							'size_100' => __( 'Image Size (100x100)', 'wc-variation-swatches' ),
+							'size_324' => __( 'Image Size (3    24x324)', 'wc-variation-swatches' ),
 						),
-						'default' => 'size_1',
+						'default' => 'size_50',
 					],
 					[
 						'type' => 'sectionend',
@@ -161,24 +161,24 @@ class Settings extends Lib\Settings {
 					[
 						'title'       => __( 'Swatch width', 'wc-variation-swatches' ),
 						'id'          => 'wcsp_swatch_width',
-						'desc'        => __( 'Swatch width.', 'wc-variation-swatches' ),
-						'desc_tip'    => true,
+						'desc'        => __( 'Enter swatch width (px).', 'wc-variation-swatches' ),
+						'desc_tip'        => __( 'Enter swatch width (px).', 'wc-variation-swatches' ),
 						'type'        => 'text',
 						'placeholder' => '50x50',
 					],
 					[
 						'title'       => __( 'Swatch height', 'wc-variation-swatches' ),
 						'id'          => 'wcsp_swatch_height',
-						'desc'        => __( 'Swatch height.', 'wc-variation-swatches' ),
-						'desc_tip'    => true,
+						'desc'        => __( 'Enter swatch height (px).', 'wc-variation-swatches' ),
+						'desc_tip'        => __( 'Enter swatch height (px).', 'wc-variation-swatches' ),
 						'type'        => 'text',
 						'placeholder' => '100',
 					],
 					[
 						'title'       => __( 'Swatch radius', 'wc-variation-swatches' ),
 						'id'          => 'wcsp_swatch_radius',
-						'desc'        => __( 'Swatch radius.', 'wc-variation-swatches' ),
-						'desc_tip'    => true,
+						'desc'        => __( 'Enter swatch radius (px).', 'wc-variation-swatches' ),
+						'desc_tip'        => __( 'Enter swatch radius (px).', 'wc-variation-swatches' ),
 						'type'        => 'text',
 						'placeholder' => '100',
 					],
@@ -193,8 +193,8 @@ class Settings extends Lib\Settings {
 					[
 						'title'       => __( 'Font size', 'wc-variation-swatches' ),
 						'id'          => 'wcsp_font_size',
-						'desc'        => __( 'Font size.', 'wc-variation-swatches' ),
-						'desc_tip'    => true,
+						'desc'        => __( 'Enter font size (px).', 'wc-variation-swatches' ),
+						'desc_tip'        => __( 'Enter font size (px).', 'wc-variation-swatches' ),
 						'type'        => 'number',
 						'placeholder' => '16',
 					],
@@ -227,8 +227,8 @@ class Settings extends Lib\Settings {
 					[
 						'title'       => __( 'Font size', 'wc-variation-swatches' ),
 						'id'          => 'wcsp_tooltip_font_size',
-						'desc'        => __( 'Font size.', 'wc-variation-swatches' ),
-						'desc_tip'    => true,
+						'desc'        => __( 'Enter font size (px).', 'wc-variation-swatches' ),
+						'desc_tip'        => __( 'Enter font size (px).', 'wc-variation-swatches' ),
 						'type'        => 'number',
 						'placeholder' => '16',
 					],
@@ -245,7 +245,7 @@ class Settings extends Lib\Settings {
 					[
 						'title'   => __( 'Label position', 'wc-variation-swatches' ),
 						'desc'    => __( 'Chose the label position.', 'wc-variation-swatches' ),
-						'desc_tip'          => true,
+						'desc_tip'    => __( 'Chose the label position.', 'wc-variation-swatches' ),
 						'id'      => 'wcif_label_position',
 						'type'    => 'select',
 						'options' => array(
@@ -258,8 +258,8 @@ class Settings extends Lib\Settings {
 					[
 						'title'       => __( 'Font size', 'wc-variation-swatches' ),
 						'id'          => 'wcsp_label_font_size',
-						'desc'        => __( 'Font size.', 'wc-variation-swatches' ),
-						'desc_tip'    => true,
+						'desc'        => __( 'Enter font size (px).', 'wc-variation-swatches' ),
+						'desc_tip'        => __( 'Enter font size (px).', 'wc-variation-swatches' ),
 						'type'        => 'number',
 						'placeholder' => '16',
 					],
@@ -275,7 +275,7 @@ class Settings extends Lib\Settings {
 					],
 					[
 						'title'   => __( 'Check/tick color', 'wc-variation-swatches' ),
-						'desc'    => __( 'Check/tick color.', 'wc-variation-swatches' ),
+						'desc'    => __( 'Chose the check/tick color.', 'wc-variation-swatches' ),
 						'desc_tip'          => true,
 						'id'      => 'wcsp_check_or_tick_color',
 						'type'    => 'color',
@@ -283,7 +283,7 @@ class Settings extends Lib\Settings {
 					],
 					[
 						'title'   => __( 'Cross color', 'wc-variation-swatches' ),
-						'desc'    => __( 'Cross color.', 'wc-variation-swatches' ),
+						'desc'    => __( 'chose the cross color.', 'wc-variation-swatches' ),
 						'desc_tip'          => true,
 						'id'      => 'wcsp_cross_color',
 						'type'    => 'color',
@@ -292,6 +292,179 @@ class Settings extends Lib\Settings {
 					[
 						'type' => 'sectionend',
 						'id'   => 'swatches_attribute_options',
+					],
+				);
+				break;
+
+			case 'product_page':
+				$settings = array(
+					[
+						'title' => __( 'Product Page', 'wc-variation-swatches' ),
+						'type'  => 'title',
+						'desc'  => __( 'The following options are the product page settings.', 'wc-variation-swatches' ),
+						'id'    => 'product_page_options',
+					],
+					[
+						'type' => 'sectionend',
+						'id'   => 'product_page_options',
+					],
+					[
+						'title' => __( 'General', 'wc-variation-swatches' ),
+						'type'  => 'title',
+						'desc'  => __( 'The following options are the product page general settings.', 'wc-variation-swatches' ),
+						'id'    => 'product_general_options',
+					],
+					[
+						'title'   => __( 'Enable tooltip', 'wc-variation-swatches' ),
+						'desc'    => __( 'Enable tooltip.', 'wc-variation-swatches' ),
+						'id'      => 'wcvs_enable_tooltip',
+						'default' => 'yes',
+						'type'    => 'checkbox',
+					],
+					[
+						'title'   => __( 'Show selected attribute', 'wc-variation-swatches' ),
+						'desc'    => __( 'Show selected attribute.', 'wc-variation-swatches' ),
+						'id'      => 'wcvs_show_selected_attr',
+						'default' => 'yes',
+						'type'    => 'checkbox',
+					],
+					[
+						'title'             => __( 'Variation label separator', 'wc-variation-swatches' ),
+						'id'                => 'wcsp_variation_label_separator',
+						'desc'              => __( 'Enter the variation label separator.', 'wc-variation-swatches' ),
+						'desc_tip'          => __( 'Enter the variation label separator.', 'wc-variation-swatches' ),
+						'type'              => 'text',
+						'default'           => ':',
+						'custom_attributes' => array(
+							'data-cond-id'    => 'wcvs_show_selected_attr',
+							'data-cond-value' => 'yes',
+						),
+					],
+					[
+						'title'             => __( 'Enable preloader', 'wc-variation-swatches' ),
+						'desc'              => __( 'Enable the preloader.', 'wc-variation-swatches' ),
+						'id'                => 'wcvs_enable_preloader',
+						'default'           => 'yes',
+						'type'              => 'checkbox',
+						'custom_attributes' => array(
+							'data-cond-id'    => 'wcvs_show_selected_attr',
+							'data-cond-value' => 'yes',
+						),
+					],
+					[
+						'title'             => __( 'Variation stock info', 'wc-variation-swatches' ),
+						'id'                => 'wcsp_variation_stock_info',
+						'desc'              => __( 'Enter the variation stock info.', 'wc-variation-swatches' ),
+						'desc_tip'          => __( 'Enter the variation stock info.', 'wc-variation-swatches' ),
+						'type'              => 'text',
+						'custom_attributes' => array(
+							'data-cond-id'    => 'wcvs_show_selected_attr',
+							'data-cond-value' => 'yes',
+						),
+					],
+					[
+						'title'             => __( 'Attribute display limit', 'wc-variation-swatches' ),
+						'id'                => 'wcsp_attribute_display_limit',
+						'desc'              => __( 'Enter the attribute display limit.', 'wc-variation-swatches' ),
+						'desc_tip'              => __( 'Enter the attribute display limit.', 'wc-variation-swatches' ),
+						'type'              => 'number',
+						'placeholder' => '0',
+						'custom_attributes' => array(
+							'data-cond-id'    => 'wcvs_show_selected_attr',
+							'data-cond-value' => 'yes',
+						),
+					],
+					[
+						'title'             => __( 'Generate variation URL', 'wc-variation-swatches' ),
+						'desc'              => __( 'Generate variation URL.', 'wc-variation-swatches' ),
+						'id'                => 'wcvs_generate_variation_url',
+						'default'           => 'yes',
+						'type'              => 'checkbox',
+						'custom_attributes' => array(
+							'data-cond-id'    => 'wcvs_show_selected_attr',
+							'data-cond-value' => 'yes',
+						),
+					],
+					[
+						'type' => 'sectionend',
+						'id'   => 'product_general_options',
+					],
+					[
+						'title' => __( 'Customize', 'wc-variation-swatches' ),
+						'type'  => 'title',
+						'desc'  => __( 'The following options are the customize settings.', 'wc-variation-swatches' ),
+						'id'    => 'product_customize_options',
+					],
+					[
+						'title'   => __( 'Override global settings', 'wc-variation-swatches' ),
+						'desc'    => __( 'Override global settings.', 'wc-variation-swatches' ),
+						'id'      => 'wcvs_override_global_settings',
+						'default' => 'yes',
+						'type'    => 'checkbox',
+					],
+					[
+						'title'             => __( 'Swatch width', 'wc-variation-swatches' ),
+						'id'                => 'wcsp_customize_swatch_width',
+						'desc'              => __( 'Enter swatch width (px).', 'wc-variation-swatches' ),
+						'desc_tip'              => __( 'Enter swatch width (px).', 'wc-variation-swatches' ),
+						'type'              => 'text',
+						'placeholder'       => '50',
+						'custom_attributes' => array(
+							'data-cond-id'    => 'wcvs_override_global_settings',
+							'data-cond-value' => 'yes',
+						),
+					],
+					[
+						'title'             => __( 'Swatch height', 'wc-variation-swatches' ),
+						'id'                => 'wcsp_customize_swatch_height',
+						'desc'              => __( 'Enter swatch height (px).', 'wc-variation-swatches' ),
+						'desc_tip'              => __( 'Enter swatch height (px).', 'wc-variation-swatches' ),
+						'type'              => 'text',
+						'placeholder'       => '100',
+						'custom_attributes' => array(
+							'data-cond-id'    => 'wcvs_override_global_settings',
+							'data-cond-value' => 'yes',
+						),
+					],
+					[
+						'title'             => __( 'Swatch radius', 'wc-variation-swatches' ),
+						'id'                => 'wcsp_customize_swatch_radius',
+						'desc'              => __( 'Enter swatch radius (px).', 'wc-variation-swatches' ),
+						'desc_tip'              => __( 'Enter swatch radius (px).', 'wc-variation-swatches' ),
+						'type'              => 'text',
+						'placeholder'       => '100',
+						'custom_attributes' => array(
+							'data-cond-id'    => 'wcvs_override_global_settings',
+							'data-cond-value' => 'yes',
+						),
+					],
+					[
+						'title'             => __( 'Border color', 'wc-variation-swatches' ),
+						'desc'              => __( 'Choose the border color.', 'wc-variation-swatches' ),
+						'desc_tip'          => true,
+						'id'                => 'wcsp_customize_border_color',
+						'type'              => 'color',
+						'default'           => '#cccccc',
+						'custom_attributes' => array(
+							'data-cond-id'    => 'wcvs_override_global_settings',
+							'data-cond-value' => 'yes',
+						),
+					],
+					[
+						'title'             => __( 'Font size', 'wc-variation-swatches' ),
+						'id'                => 'wcsp_customize_font_size',
+						'desc'              => __( 'Enter font size (px).', 'wc-variation-swatches' ),
+						'desc_tip'              => __( 'Enter font size (px).', 'wc-variation-swatches' ),
+						'type'              => 'number',
+						'placeholder'       => '16',
+						'custom_attributes' => array(
+							'data-cond-id'    => 'wcvs_override_global_settings',
+							'data-cond-value' => 'yes',
+						),
+					],
+					[
+						'type' => 'sectionend',
+						'id'   => 'product_customize_options',
 					],
 				);
 				break;
@@ -313,7 +486,7 @@ class Settings extends Lib\Settings {
 					[
 						'title'   => __( 'Swatch alignment', 'wc-variation-swatches' ),
 						'desc'    => __( 'Select the swatch alignment option.', 'wc-variation-swatches' ),
-						'desc_tip'          => true,
+						'desc_tip'    => __( 'Select the swatch alignment option.', 'wc-variation-swatches' ),
 						'id'      => 'wcif_swatch_alignment',
 						'type'    => 'select',
 						'options' => array(
@@ -326,7 +499,7 @@ class Settings extends Lib\Settings {
 					[
 						'title'   => __( 'Swatch position', 'wc-variation-swatches' ),
 						'desc'    => __( 'Select the swatch position.', 'wc-variation-swatches' ),
-						'desc_tip'          => true,
+						'desc_tip'    => __( 'Select the swatch position.', 'wc-variation-swatches' ),
 						'id'      => 'wcif_swatch_position',
 						'type'    => 'select',
 						'options' => array(
@@ -345,10 +518,10 @@ class Settings extends Lib\Settings {
 						'type'    => 'checkbox',
 					],
 					[
-						'title'       => __( 'attribute limits', 'wc-variation-swatches' ),
+						'title'       => __( 'Attribute limits', 'wc-variation-swatches' ),
 						'id'          => 'wcsp_attribute_limit',
-						'desc'        => __( 'Attribute limite', 'wc-variation-swatches' ),
-						'desc_tip'    => true,
+						'desc'        => __( 'Enter the attribute limit', 'wc-variation-swatches' ),
+						'desc_tip'        => __( 'Enter the attribute limit', 'wc-variation-swatches' ),
 						'type'        => 'number',
 						'placeholder' => '10',
 					],
@@ -373,8 +546,8 @@ class Settings extends Lib\Settings {
 					[
 						'title'             => __( 'Swatch width', 'wc-variation-swatches' ),
 						'id'                => 'wcsp_shop_swatch_width',
-						'desc'              => __( 'Swatch width.', 'wc-variation-swatches' ),
-						'desc_tip'          => true,
+						'desc'              => __( 'Enter swatch width (px).', 'wc-variation-swatches' ),
+						'desc_tip'              => __( 'Enter swatch width (px).', 'wc-variation-swatches' ),
 						'type'              => 'text',
 						'placeholder'       => '50',
 						'custom_attributes' => array(
@@ -385,8 +558,8 @@ class Settings extends Lib\Settings {
 					[
 						'title'             => __( 'Swatch height', 'wc-variation-swatches' ),
 						'id'                => 'wcsp_shop_swatch_height',
-						'desc'              => __( 'Swatch height.', 'wc-variation-swatches' ),
-						'desc_tip'          => true,
+						'desc'              => __( 'Enter swatch height (px).', 'wc-variation-swatches' ),
+						'desc_tip'              => __( 'Enter swatch height (px).', 'wc-variation-swatches' ),
 						'type'              => 'text',
 						'placeholder'       => '100',
 						'custom_attributes' => array(
@@ -397,8 +570,8 @@ class Settings extends Lib\Settings {
 					[
 						'title'             => __( 'Swatch radius', 'wc-variation-swatches' ),
 						'id'                => 'wcsp_shop_swatch_radius',
-						'desc'              => __( 'Swatch Radius.', 'wc-variation-swatches' ),
-						'desc_tip'          => true,
+						'desc'              => __( 'Enter swatch Radius (px).', 'wc-variation-swatches' ),
+						'desc_tip'              => __( 'Enter swatch Radius (px).', 'wc-variation-swatches' ),
 						'type'              => 'text',
 						'placeholder'       => '100',
 						'custom_attributes' => array(
@@ -421,8 +594,8 @@ class Settings extends Lib\Settings {
 					[
 						'title'             => __( 'Font size', 'wc-variation-swatches' ),
 						'id'                => 'wcsp_shop_font_size',
-						'desc'              => __( 'Font size.', 'wc-variation-swatches' ),
-						'desc_tip'          => true,
+						'desc'              => __( 'Enter font size (px).', 'wc-variation-swatches' ),
+						'desc_tip'              => __( 'Enter font size (px).', 'wc-variation-swatches' ),
 						'type'              => 'number',
 						'placeholder'       => '16',
 						'custom_attributes' => array(
@@ -441,7 +614,7 @@ class Settings extends Lib\Settings {
 		return apply_filters( 'wc_variation_swatches_get_settings_' . $tab, $settings );
 	}
 
-	 /**
+	/**
 	 * Output settings form.
 	 *
 	 * @param array $settings Settings.
@@ -449,16 +622,16 @@ class Settings extends Lib\Settings {
 	 * @return void
 	 * @since 1.0.0
 	 */
-	 protected function output_form( $settings ) {
-		 $current_tab = $this->get_current_tab();
-		 /**
+	protected function output_form( $settings ) {
+		$current_tab = $this->get_current_tab();
+		/**
 		 * Action hook to output settings form.
 		 *
 		 * @since 1.0.0
 		 */
-		 do_action( 'wc_variation_swatches_settings_' . $current_tab );
-		 parent::output_form( $settings );
-	 }
+		do_action( 'wc_variation_swatches_settings_' . $current_tab );
+		parent::output_form( $settings );
+	}
 
 	/**
 	 * Output tabs.
